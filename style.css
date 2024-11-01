@@ -4,7 +4,9 @@
 }
 
 :root {
-    --bkg-light: #dede;
+    --bkg-light: hsl(210deg 20% 98.04%);
+    --primary-color: #004036;
+    --accent-color: rgb(194, 103, 38);
     --logo-height: max(50px, 20%);
 }
 * {
@@ -34,11 +36,51 @@
     right: 30%;
     color: white;
     font-size: calc(6.5rem + 25%);
+    font-weight: 400;
 }
-
-
 .main-content {
     flex: 1;
     height: 100vh;
     background-color: var(--bkg-light);
+    display: flex;
+    flex-direction: column;
+    font-family: "DM Sans", sans-serif;
+    line-height: 125%;
+    font-weight: 300;
+}
+.form-disclaimer {
+    max-width: 65em;
+    font-weight: 500;
+    font-size: calc(1.75rem + 2%);
+    line-height: 125%;
+}
+.form-disclaimer:first-child {
+    margin-top: 15%;
+}
+.form-disclaimer div + div {
+    margin-top: 15px; 
+    margin-bottom: 15px;
+}
+
+.sign-up-form {
+    margin-top: 10px;
+    margin-bottom: 10%;
+    box-shadow: 0px 5px 0px 5%;
+}
+.form-controls h1{
+    font-size: calc(1.5rem + 2%);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.form-controls {
+    background-color: white;
+    padding:3%;
+}
+
+.form-submit {
+    margin-inline: 3%;
+}
+
+.form-disclaimer {
+    margin-inline: 3%;
 }
