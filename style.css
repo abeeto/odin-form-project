@@ -24,7 +24,7 @@
 
 .side-panel {
     flex: 0 1 max(150px, 33%);
-    background-image: url(odin-lined.png), linear-gradient( rgba(19, 18, 18, 0.692), rgba(19, 17, 18, 0.425)), url(lexi-laginess-XYfjIT9c01Q-unsplash.jpg);
+    background-image: url(odin-lined.png), linear-gradient( rgba(19, 18, 18, 0.692), rgba(19, 17, 18, 0.425)), url(halie-west-25xggax4bSA-unsplash.jpg);
     background-repeat: no-repeat, repeat-x, no-repeat;
     background-size: min(100px, 20%), 100% 150px, cover;
     background-position: 28% 30%, 0 29%;
@@ -39,6 +39,23 @@
     color: white;
     font-size: calc(5.5rem + 25%);
     font-weight: 400;
+}
+
+.side-panel div {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    color: #f3f3f3;
+    width: 100%;
+    font-weight: 200;
+}
+
+.side-panel a {
+    color: #f3f3f3;
+    font-weight: 200;
+}
+.side-panel a:hover {
+    text-decoration: underline;
 }
 .main-content {
     flex: 1;
