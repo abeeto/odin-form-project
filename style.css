@@ -13,6 +13,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 125%;
+    font-family: "DM Sans", sans-serif;
 }
 
 .container {
@@ -45,14 +47,13 @@
     display: flex;
     flex-direction: column;
     font-family: "DM Sans", sans-serif;
-    line-height: 125%;
     font-weight: 300;
 }
 .form-disclaimer {
-    max-width: 65em;
+    max-width: 30em;
     font-weight: 500;
     font-size: calc(1.75rem + 2%);
-    line-height: 125%;
+    margin-inline: 3%;
 }
 .form-disclaimer:first-child {
     margin-top: 15%;
@@ -67,20 +68,100 @@
     margin-bottom: 10%;
     box-shadow: 0px 5px 0px 5%;
 }
-.form-controls h1{
+.sign-up-form h1{
     font-size: calc(1.5rem + 2%);
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 15px;
+    background-color: white;
+    padding: 2% 3% 0% 3%;
+    margin-bottom: 0;
 }
 .form-controls {
     background-color: white;
-    padding:3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15%;
+    max-width: 650px;
+
 }
+.form-wrapper {
+    background-color: white;
+    padding: 2% 3% 1% 3%;
+}
+
+.form-controls div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 42.5%;
+    margin-bottom: 20px;
+}
+
+.form-controls label {
+    text-transform: uppercase;
+    color: #585858;
+}
+
+.form-controls div:last-child {
+    margin-bottom: 0;
+}
+
+.form-controls input {
+    appearance: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    padding: 5px 6px;
+    color: #585858;
+}
+
+.form-controls input:focus {
+    outline: 1px solid royalblue;
+    box-shadow: 0px 3px 2px #aca9a9;
+}
+
+.form-controls input:invalid {
+    outline: 1px solid rgb(216, 50, 50);
+}
+
+#form-control-password {
+    position: relative;
+}
+
+#form-control-password input:invalid + span::after {
+    position: absolute;
+    color:rgb(216, 50, 50);
+    content: "*Passwords do not match";
+    font-size: 0.7rem;
+    top: 48px;
+}
+
 
 .form-submit {
     margin-inline: 3%;
+    margin-top: 15px;
 }
 
-.form-disclaimer {
-    margin-inline: 3%;
+.form-submit button {
+    appearance: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 30px;
+    font-weight:900;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 0px 10px rgb(92, 92, 92);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-submit button:hover {
+    background-color: #035246;
+    outline: 2px solid white;
+}
+
+.form-submit button:active {
+    background-color: #05574a;
+    outline: 2px solid whitesmoke;
+    transform: translateY(2px)
 }
